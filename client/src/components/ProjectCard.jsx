@@ -11,12 +11,13 @@ export default function ProjectCard({ project }) {
                             <div className="d-flex justify-content-between align-items-center">
                                 
                             <FaExclamation className="project-icon dark-red"/>
-                                <h5 className="card-title">{project.name}</h5>
+                                <h5 className="card-title">{project.name}</h5>                              
 
                                 <a className="btn btn-light" href={`/projects/${project.id}`}>
                                     View
                                 </a>
                             </div>
+                            <div className="small m-4">{project.description}</div>
                             <p className="small card--status">
                                 Status:<strong> {project.status}</strong>
                             </p>
@@ -39,6 +40,7 @@ export default function ProjectCard({ project }) {
                                     View
                                 </a>
                             </div>
+                            <div className="small m-4">{project.description}</div>
                             <p className="small card--status">
                                 Status:<strong> {project.status}</strong>
                             </p>
@@ -61,6 +63,7 @@ export default function ProjectCard({ project }) {
                                     View
                                 </a>
                             </div>
+                            <div className="small m-4">{project.description}</div>
                             <p className="small card--status">
                                 Status:<strong> {project.status}</strong>
                             </p>
