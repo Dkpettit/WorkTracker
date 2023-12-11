@@ -26,7 +26,7 @@ const cache = new InMemoryCache({
 })
 
 const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql',
+  uri: 'https://dave-pettit-work-tracker.onrender.com/graphql',
   cache,
 });
 
